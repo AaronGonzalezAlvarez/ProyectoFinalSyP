@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parte1{
+            display: flex;
+            background-color: blueviolet;
+            width: 25%;
+            height: auto;
+            flex-direction: column;
+        }
+
+        .celda{
+            width: 25px;
+            height: 25px;
+            background-color: aquamarine;
+        }
+
+        .tablero1, .tablero2{
+            display: flex;
+            flex-direction: column;
+            margin-left: 25px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        
+        .fila{
+            display: flex;
+        }
+
+        .disparo{
+            background-color: yellow;
+        }
+
+        .tocado{
+            background-color: crimson;
+        }
+        
+        .barco{
+            background-color: black;
+        }
+        
+        .global{
+            display: flex;
+        }
+        
+        h2 {
+    		margin-left: 25%;
+			}
+
+    </style>
+</head>
+<body>
+	<div class="global">
+    <div class="parte1">
+    <h2>--jugador1--</h2>
+        <div class="tablero1">
+            --tablero1--
+        </div>
+        <div class="tablero2">
+			--tablero2--
+        </div>        
+    </div>
+    <div class="parte1">
+    <h2>--jugador2--</h2>
+        <div class="tablero1">
+            --tablero3--
+        </div>
+        <div class="tablero2">
+			--tablero4--
+        </div>        
+    </div>
+    <h3 id="ganador--ganadorId--">Ha ganado --ganador-- mientras que --perdedor-- ha perdido</h3>
+    </div>
+</body>
+</html>
